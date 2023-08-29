@@ -48,7 +48,28 @@ public class SwitchCaseDemo {
 					 
 					break; //to come out of case 
 				case 2: 
-					//do something
+					while(true) {
+						System.out.println("---Mutual Funds or SIPs----");
+						System.out.println("1. Lump Sum payment MF");
+						System.out.println("2. SIP MF");
+						System.out.println("0. To go back to main menu");
+						int mfInput= sc.nextInt();
+						if(mfInput == 0) {
+							 System.out.println("going back to the previous menu..");
+							 break; 
+						}
+						switch(mfInput) {
+						case 1:
+							System.out.println("Lumsump options go here... ");
+							break;
+						case 2: 
+							System.out.println("sip options go here... ");
+							break;
+						default: 
+							System.out.println("Invalid input pressed..");
+							break; 
+						}
+					}
 					break; 
 				case 3: 
 					//do something
