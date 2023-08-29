@@ -56,8 +56,6 @@ public class App {
 		else {
 			grade="FAILED";
 		}
-		
-		
 		System.out.println("Grade is: " + grade);
 	}
 }
