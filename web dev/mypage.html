@@ -5,23 +5,46 @@
    1. CSS: Cascading Style Sheet for Design of the body 
    2. JavaScript: For programatically controling the body content - makes the page dynamic
 -->
+<style>
+    .welcome{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .info{
+        color: darkslateblue;
+    }
+    .contact{
+        border: 1px solid grey;
+        box-shadow: 5px 7px green;
+    }
+</style>
+<link href="./css/style.css" rel="stylesheet">
+
 </head>
 <body>
    <div id="page">
-    <div id="header"> 
-        <h1>This is my First page</h1>
+    <!-- Embedded CSS -->
+    <div id="header" style="background-color: aqua; font-size: 20px;"> 
+        <span style="color: blue; font-weight: bold;"> This is my First page</span>
         <h3>BY:- Imtiyaz Hirani </h3>
     </div>
     <hr>
-    <div id="welcome">
+    <!-- Inline CSS -->
+    <div id="welcome" class="welcome">
         <p>Welcome to my site. Hope you like it</p>
-        <p>This site will give you info about all cities of India</p>
+        <p class="info">This site will give you info about all cities of India</p>
     </div>
     <hr>
     <div id="capital">
         <span>Delhi is the capital of India.&nbsp;&nbsp;&nbsp;</span>
-         <span>Mumbai is the financial capital of India. </span>
+         <span class="info">Mumbai is the financial capital of India. </span>
     </div> 
+    <br><br>
+    <div class="contact" >
+        <p>Contact Us</p>
+        <span>
+            203, D Block, Times Square, Andheri Mumbai
+        </span>
+    </div>
    </div>  
 </body>
 </html>
@@ -38,4 +61,11 @@
     8. <form>: TO create a form for reading data from the user. 
     9. <ul>/<ol>: Unordered list / Ordered list 
     10: <table> : To create and arrange the data in tabular format.         
+-->
+
+<!-- 
+    Types of CSS
+    1. Embedded CSS 
+    2. Inline CSS
+    3. External CSS
 -->
