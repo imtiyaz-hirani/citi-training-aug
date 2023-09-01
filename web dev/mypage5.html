@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <script src="./js/myscript.js"> </script>
+    </head>
+    <body>
+        <h2>JavaScript Demo</h2>
+        <hr>
+        <button onclick="showAddress()">Address</button>
+        <div id="address" style="display: none;">
+            201 D Block, Times Square, Andheri, Mumbai
+        </div>
+        <hr> 
+        <h4>Please select MF scheme to view Information</h4>
+        <form action="Javascript::void" onsubmit="showMfInfo()">
+            <input type="radio" id="mf_flexi" name="mf" value="FLEXI" required> 
+            <span>Flexi Cap Funds</span>
+            <br >
+            <input type="radio"  id="mf_large" name="mf" value="LARGE" required> 
+            <span>Large Cap Funds</span>
+            <br >
+            <input type="radio"  id="mf_small" name="mf" value="SMALL" required> 
+            <span>Small Cap Funds</span>
+            <br><br>
+            <input type="submit" value="Show Info"> 
+        </form>
+
+        <br ><br>
+        <div id="info_flexi" style="display: none;">
+            <span>In Flexi Cap, we diversify the funds in all types of companies. 
+                <br>The Average return expected is 12-15 CAGR per annum
+            </span>
+        </div>
+        <div id="info_large" style="display: none;">
+            <span>In Large Cap, we invest the funds in bluechip large companies. 
+                <br>The Average return expected is 10-12 CAGR per annum
+            </span>
+        </div>
+        <div id="info_small" style="display: none;">
+            <span>In Small Cap, we invest the funds in Small emerging listed companies. 
+                <br>The Average return expected is 15-18 CAGR per annum
+            </span>
+        </div>
+    </body>
+</html>
+
+<!-- 
+    Form in HTML always by default gets auto submitted, 
+    due to this, web page get refreshed. 
+    TO prevent this, Use action property of Form and void the JS. 
+-->
+
+
+<!-- 
+    <button> v/s  <input type="submit">
+    - Validation works with  <input type="submit">
+-->
+
+<!-- 
+    onclick v/s onsubmit
+    - onclick happens before validation
+    - onsubmit happens after validation 
+-->
